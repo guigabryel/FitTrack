@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliar Desempenho | FitTrack</title>
+    <style>
+        /* Estilo geral */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: #0056b3;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #004494;
+        }
+
+        .container {
+            padding: 40px;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #007bff;
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 18px;
+            color: #555;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        /* Estilo da tabela de avaliação */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        /* Estilo do botão de enviar avaliação */
+        .btn-submit {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .btn-submit:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            background-color: #0056b3;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="principal.html" style="color: white; text-decoration: none;">
+        <h2>FitTrack</h2>
+    </a>    <h1 style="color: white;">Avaliar Desempenho</h1>
+</header>
+
+<nav>
+    <a href="index.html">Turmas</a>
+    <a href="gerenciar_alunos.html">Alunos</a>
+    <a href="criar_atividades.html">Atividades</a>
+    <a href="relatorios.html">Relatórios</a>
+    <a href="#">Sair</a>
+</nav>
+
+<div class="container">
+    <h1>Avaliação de Desempenho</h1>
+    <p>Aqui você pode avaliar o desempenho de seus alunos.</p>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Nome do Aluno</th>
+                <th>Desempenho</th>
+                <th>Comentários</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Aluno 1</td>
+                <td>
+                    <select>
+                        <option value="Excelente">Excelente</option>
+                        <option value="Bom">Bom</option>
+                        <option value="Regular">Regular</option>
+                        <option value="Insatisfatório">Insatisfatório</option>
+                    </select>
+                </td>
+                <td><input type="text" placeholder="Comentários"></td>
+            </tr>
+            <tr>
+                <td>Aluno 2</td>
+                <td>
+                    <select>
+                        <option value="Excelente">Excelente</option>
+                        <option value="Bom">Bom</option>
+                        <option value="Regular">Regular</option>
+                        <option value="Insatisfatório">Insatisfatório</option>
+                    </select>
+                </td>
+                <td><input type="text" placeholder="Comentários"></td>
+            </tr>
+            <tr>
+                <td>Aluno 3</td>
+                <td>
+                    <select>
+                        <option value="Excelente">Excelente</option>
+                        <option value="Bom">Bom</option>
+                        <option value="Regular">Regular</option>
+                        <option value="Insatisfatório">Insatisfatório</option>
+                    </select>
+                </td>
+                <td><input type="text" placeholder="Comentários"></td>
+            </tr>
+            <!-- Adicione mais linhas conforme necessário -->
+        </tbody>
+    </table>
+
+    <button class="btn-submit">Salvar Avaliações</button>
+</div>
+
+<footer>
+    <p style="color: white;">FitTrack © 2024 - Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>

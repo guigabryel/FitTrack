@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal - Professor | FitTrack</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: #0056b3;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        nav a:hover {
+            background-color: #004494;
+            border-radius: 4px;
+        }
+        .container {
+            padding: 20px;
+        }
+        h1 {
+            color: #007bff;
+            text-align: center;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .grid-item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            text-align: center;
+            position: relative;
+            height: auto; /* Ajustado para que o conteúdo se ajuste dinamicamente */
+        }
+        .grid-item h3 {
+            margin: -5px 0;
+        }
+        .grid-item a {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 10px; /* Para garantir espaçamento entre o texto e o link */
+        }
+        .grid-item a:hover {
+            background-color: #0056b3;
+        }
+        .grid-item img {
+            width: 100%;
+            height: 180px;  /* Defina uma altura fixa */
+            object-fit: cover; /* Ajuste para cobrir a área de maneira proporcional */
+            border-radius: 8px;
+            margin-bottom: 10px; /* Adicionado para espaçamento entre imagem e texto */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h2 style="color: white;">FitTrack</h2>
+    <h1 style="color: white;">Bem-vindo(a), Professor(a)</h1>
+</header>
+
+<nav>
+    <a href="#">Turmas</a>
+    <a href="#">Alunos</a>
+    <a href="#">Atividades</a>
+    <a href="#">Relatórios</a>
+    <a href="#">Sair</a>
+</nav>
+
+<div class="container">
+    <h1>Painel de Controle</h1>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="/imagens/turmas.jpg" alt="Gerenciar Turmas">
+            <h3>Gerenciar Turmas</h3>
+            <a href="/Cadastro e login/gerenciar_turmas.html">Acessar</a>
+        </div>
+        <div class="grid-item">
+            <img src="/imagens/gerenciar.jpg" alt="Gerenciar Alunos">
+            <h3>Gerenciar Alunos</h3>
+            <a href="/Cadastro e login/gerenciar_alunos.html">Acessar</a>
+        </div>
+        <div class="grid-item">
+            <img src="/imagens/criar.jpg" alt="Criar Atividades">
+            <h3>Criar Atividades</h3>
+            <a href="/Cadastro e login/criar_atividades.html">Acessar</a>
+        </div>
+        <div class="grid-item">
+            <img src="/imagens/avaliar.jpg" alt="Avaliar Desempenho">
+            <h3>Avaliar Desempenho</h3>
+            <a href="/Cadastro e login/avaliar_desempenho.html">Acessar</a>
+        </div>
+        <div class="grid-item">
+            <img src="/imagens/relatorio.jpg" alt="Relatórios">
+            <h3>Relatórios</h3>
+            <a href="/Cadastro e login/relatorios.html">Acessar</a>
+        </div>
+        <div class="grid-item">
+            <img src="/imagens/suporte.jpg" alt="Suporte">
+            <h3>Suporte</h3>
+            <a href="/Cadastro e login/suporte.html">Acessar</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
